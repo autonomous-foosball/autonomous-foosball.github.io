@@ -1,2 +1,2 @@
 # autonomous-foosball.github.io
-Web Page
+Gebze Technical University CSE396 Course Autonomous Foosball Project Web Page 
