@@ -745,6 +745,7 @@ footer .inner-content p a {
 
 .services .service-item {
 	text-align: center;
+	margin-top: 25px;
 }
 
 .services .service-item .icon {
@@ -775,7 +776,7 @@ footer .inner-content p a {
 }
 
 .services .service-item .down-content p {
-	margin-bottom: 25px;
+	margin-bottom: 0px;
 }
 
 
