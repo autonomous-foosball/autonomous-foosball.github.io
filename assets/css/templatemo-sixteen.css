@@ -536,14 +536,6 @@ header .navbar {
 	top: 8px;
 }
 
-.best-features ul.featured-list li a:hover {
-	color: #f33f3f;
-}
-
-.best-features ul.featured-list li a:hover::before {
-	background-color: #f33f3f;
-}
-
 .best-features .filled-button {
 	margin-top: 20px;
 }
