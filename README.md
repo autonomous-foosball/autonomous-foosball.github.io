@@ -1,2 +1,4 @@
 # autonomous-foosball.github.io
-Gebze Technical University CSE396 Course Autonomous Foosball Project Web Page 
+Gebze Teknik Üniversitesi Bilgisayar Mühendisliği CSE396 Proje dersi kapsamında hazırladığımız akıllı langırt projesinin web sayfası.
+-
+GRUP 8
