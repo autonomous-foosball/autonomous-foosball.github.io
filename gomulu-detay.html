@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <title>Akıllı Langırt - Donanım</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--
+    
+    TemplateMo 546 Sixteen Clothing
+    
+    https://templatemo.com/tm-546-sixteen-clothing
+    
+    -->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    <!-- Header -->
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h2>Akıllı <em>Langırt</em></h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Ana Sayfa
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="nasil_yaptik.html">Nasıl Yaptık?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ekibimiz.html">Ekibimiz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="grid">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 bg-success">Under me should be a DIV</div>
+            <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 bg-danger">Under me should be a DIV</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 bg-warning">I am the last DIV</div>
+        </div>
+    </div>
+
+    </div>
+    <div class="best-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <h1>
+                        Gömülü Yazılım
+                    </h1>
+                </div>
+
+
+                <div class="left-content mt-5 ml-3">
+                    <ul class="featured-list">
+                        <li>
+                            <h3>1. GÖMÜLÜ YAZILIM TASARIM</h3>
+                            <ul class="ml-3 mt-3">
+                                <li>
+                                    <h4>1.1 ANA YAZILIM TASARIMI</h4>
+                                    <p class="ml-4 h6">
+                                        Ana yazılım tasarım diyagramı şekilde gösterilmiştir.
+                                        <br />
+                                        <br />
+                                    <div style="display: flex;justify-content: center;">
+                                        <img class="" src="assets/images/gomulu1.JPG" style="width:40%;height:40%;" />
+                                    </div>
+
+                                    <br />
+                                    <br />
+                                    Diyagramda belirtilen iş parçacıkları ve görevleri :
+                                    <br />
+                                    <br />
+                                    <ul class="ml-3">
+                                        <li><b>● Main Thread :</b> Gerekli alt iş parçacıklarının
+                                            yaratılmasından,
+                                            durdurulmasından ve yürütülmesinden sorumludur.</li>
+                                        <li><b>● Game Play Thread :</b> Oyunun oynanacağı, top takibinin
+                                            yapılacağı ve motorları komut gönderilmesinin yapılacağı iş
+                                            parçacığıdır. Visual Servoing konsepti bu iş parçacığı altında
+                                            yürütülmektedir. Bir alt iş parçacığı oluşturur:
+                                            <ul class="ml-5 mt-3">
+                                                <li><b>○ Servo Kick Tracker :</b>Servo motora (langırt koluna)
+                                                    vuruş işini yaptırmakla sorumludur. Top görüntüde tespit
+                                                    edildikten
+                                                    sonra eğer vuruş gerekiyorsa bu iş parçacığı tetiklenir ve
+                                                    ayrı bir akış üzerinden, vuruş esnasında kare kaybetmeden
+                                                    işlem gerçekleşmiş olur.</li>
+                                                <li>
+                                                    <b>○ Ball Tracker Warning Thread :</b> Topun saha içerisinde
+                                                    bulunmaması durumunda, kontrol ünitesi üzerindeki kırmızı
+                                                    ledin
+                                                    yanıp sönme işlemini gerçekleştirir. Ana oyun iç parçacığı,
+                                                    topu görmediği zaman bu iş parçacığı tetikleyerek, bu iç
+                                                    parçacığının döngü içerisinde kırmızı ledip söndürüp yakma
+                                                    işlemini başlatır.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <b>● Server Thread :</b> İstemciden(UI / Simulasyon bilgisayarını
+                                            kullanan kullanıcı) isteklerin alınmasından ve
+                                            çalıştırılmasından sorumludur. Oyunu başlatma (zorluk seçimi ile),
+                                            oyunu durdurma, eskiye yönelik maç skorlarının
+                                            gösterilmesi isteklerine cevap verir.
+                                        </li>
+                                    </ul>
+
+                                    </p>
+
+                                </li>
+                                <li class="mt-3">
+                                    <h4>1.2 GÖRÜNTÜDE TOP TESPİTİNİN YAPILMASI</h4>
+                                    <p class="ml-4 h6">
+                                        Oyun esnasında eyleyici ve servo motorlara ilgili pozisyon komutlarının
+                                        gönderilmesi için, öncesinde top pozisyonunu
+                                        canlı görüntüden tespit edilmesi gerekmektedir.
+
+                                        Top pozisyon takibi için, aşağıdaki adımlar uygulanmıştır ;
+                                        <br />
+
+                                    <ul class="ml-5">
+                                        <li>● Kameradan frame alınır.</li>
+                                        <li>● Görüntü üzerinde gürültü giderilir (Gaussian ile).</li>
+                                        <li>● Görüntü RGB resimden HSV resme dönüştürülür.</li>
+                                        <li>● HSV resime dönüştürülen görüntü üzerinde nesne tespiti (daire)
+                                            uygulanır. Böylelikle, görüntü üzerinde sadece önceden
+                                            belirlenmiş olan topun rengi gözükür.
+                                        </li>
+                                        <li>● Farklı HSV skalası ile insan kolları da görüntüden tespit edilir.
+                                            Böylelikle, 2D ve 3D görüntüleme yazılımlarında
+                                            insan kolları da gözükecektir.
+                                        </li>
+                                    </ul>
+                                    </p>
+                                </li>
+                                <li class="mt-3">
+                                    <h4>1.3 GENEL KONTROL / OYUN ALGORİTMASI</h4>
+                                    <p class="ml-4 h6">
+                                        Game Play Thread iş parçacığı içerisinde ana oyun algoritması
+                                        çalıştırılır. Ana oyun algoritması aşağıdaki gibi
+                                        geliştirilmiştir:
+                                        <br />
+                                    <p class="ml-5 h6">
+                                        1) Kameradan bir frame alınır.
+                                        <br />
+                                        2) Alınan frame, görüntü işleme metodlarına verilerek, buradan top
+                                        pozisyonu ve insan kol pozisyonları elde edilir.
+                                        <br />
+                                        3) Gol durumu kontrol edilir. (Gol sensöründen veri okunur). Herhangi
+                                        bir gol durumunda, ilgili oyuncunu skoru
+                                        arttırılır.
+                                        <br />
+                                        4) Top yeniden sahaya girene kadar, yeni gol kararı verilmez.
+                                        Böylelikle, topun gol haznesinden alınması sırasında
+                                        oluşacak sensör tetiklemesi, yeni skor güncellemesi yaratmaz.
+                                        <br />
+                                        5) Forvet servo motor pozisyonu ayarlanır. (Eğer top robotun kalesine
+                                        yakınsa, forvet kollar kaldırılır, böylelikle
+                                        robot kendi şutunu engellemez)
+                                        <br />
+                                        6) Topun vuruş mesafesine girdiği tespit edilirse, vuruş yapacak servo
+                                        iş parçacığı tetiklenir ve vuruş
+                                        gerçekleştirilir. Böylelikle, servo motorun vuruşu bitirmesi beklenmeden
+                                        ana algoritma çalışmasına devam eder.
+                                        <br />
+                                        7) Eyleyici motor pozisyonları ayarlanır. Buradaki ana algoritma, topa
+                                        en yakın olan oyuncunun topa yönlendirilmesidir.
+                                        Alınan top pozisyonu ile 3 langırt oyuncusunun konumu karşılaştırılır.
+                                        En yakın olan oyuncuya göre motor komutlanır.
+                                        Böylelikle robot kısa sürede top pozisyonuna göre tepki işlemini
+                                        gerçekleştirir.
+                                        <br />
+                                        8) Multicast oyun bilgileri paketi, belirlenen IP grubuna gönderilir.
+                                        <br />
+                                        9) İşlemler döngü içerisinde tekrarlanır. Sunucu iş parçacığı, herhangi
+                                        bir durdurma durumunda, ana oyun iş
+                                        parçacığından durmasını talep eder. Oyun iş parçacığı global değişken
+                                        yardımıyla durdurma talebinin geldiğini görür ve
+                                        ilgili iş parçacıklarını durdurarak, haberleşme ile ilgili soketleri
+                                        kapatarak sonlanır.
+                                        <br />
+                                    </p>
+                                </li>
+                                <li class="mt-3">
+                                    <h4>1.4 MOTORLARIN KOMUTLANMASI</h4>
+                                    <p class="ml-4 h6">
+                                        Görüntü üzerinde top tespiti yapıldıktan sonra topun (x,y) pozisyon
+                                        bilgisi alınır. Sonrasında ;
+                                        <br />
+                                    <p class="ml-5 h6">
+                                        ● Kalecinin ve forvet kolların motor pozisyonu ayarlanır.
+                                        <br />
+                                        ● Top, robotun yarı sahasına geçtiyse forvetteki kollar kaldırılır.
+                                        Böylelikle robot kendi olası şutunu engellemez.
+                                        (Paylaşılan videoda bu özellik kapalıydı)
+                                        <br />
+                                        ● Top, kollardan herhangi birinin vuruş mesafesine girdiyse, servo vuruş
+                                        iş parçacığı tetiklenir.
+                                        <br />
+                                        ● İşlemler tekrar edilir.
+                                        <br />
+                                    </p>
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>1.5 OYUN BİLGİLERİNİN GÖNDERİLMESİ VE SUNUCUNUN BAŞLATILMASI</h4>
+                                    <p class="ml-4 mt-3 h6">
+                                        Oyun bilgilerinin, istemciye gönderilmesinde UDP Multicast yayını
+                                        kullanılmıştır. (Gerçek arayüz ile test
+                                        edilmemiştir.).
+                                        Haberleşme için tasarlanan sistem diyagramı şekilde gösterilmiştir :
+
+                                        <br />
+                                    <div style="display: flex;justify-content: center;">
+                                        <img class="" src="assets/images/gomulu2.jpg" style="width:40%;height:40%;" />
+                                    </div>
+                                    <br />
+                                    ● Raspberry Pi Cihazın IP si 10.0.0.10 olarak, Desktopda sistemin görüntüleneceği
+                                    cihazın IP si 10.0.0.93 olarak statik
+                                    olarak ayarlanacaktır.
+                                    <br />
+                                    ● Simulasyon ve Arayüz yazılımının 2 farklı process ler olmasında dolayı, UDP yayını
+                                    Multicast group üzerinden
+                                    yapılmıştır. Böylelikle, hedef bilgisayarda talep eden process bu multicast grubuna
+                                    katılıp ilgili paketleri
+                                    yakalayabilecektir.
+
+                                    <br />
+                                    Yazılımda çalışan sunucu, “Server Thread” olarak ayrı bir iş parçacığı altında
+                                    geliştirilmiştir. Bu iş parçacığı,
+                                    kullanıcının oyun ile ilgili isteklerine cevap veren iş parçacığıdır. Tek bir
+                                    kullanıcı olması sebebiyle, thread pool
+                                    yapısına gerek duyulmamıştır.
+                                    <br />
+                                    Sunucu iş parçacığı kullanıcının aşağıdaki istekleri ile yazılımı kontrol eder ;
+
+                                    <br />
+                                    <br />
+                                    <p class="ml-5 h6">
+                                        1) Oyunun başlatılması (zorluk seçimi ile) : Arayüzden gelen başlat komutu ile,
+                                        sunucu iş parçacığı oyun için gerekli
+                                        olan tüm parçacıklarını başlatır. Buradaki zorluk seçimi, langırtın motor
+                                        hızlarını kontrol etmektedir. Kolay-Zor seçim
+                                        seviyesi Yavaş-Hızlı seviyesine denk gelmektedir.
+                                        <br />
+                                        2) Oyunun durdurulması : Arayüzden gelen durdur komutu ile, sunucu iş parçacığı
+                                        oyun ile ilgili tüm iş parçacıklarına
+                                        durdurma talebini iletir (Bir global değişken ile). Oyun ile ilgili tüm iş
+                                        parçacıkları sonlandıktan sonra, durumlarını
+                                        belirten global değişkenlere STOPPED ataması yapar.
+                                        <br />
+                                        3) Eskiye yönelik maç bilgilerinin gönderilmesi : Arayüzden gelen eskiye yönelik
+                                        maçların istenmesi halinde, sunucu iş
+                                        parçacığı güncel son 10 maçın tutulduğu eskiye yönelik maç bilgilerinin
+                                        tutulduğu dosyayı okuyarak içeriğini istemciye
+                                        gönderir.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>1.6 YAZILIMIN SERVİS OLARAK BAŞLATILMASI</h4>
+                                    <p class="ml-4 mt-3 h6">
+                                        Kontrol kartı (Raspberry Pi) üzerinde, güç verildiği andan itibaren yazılımın
+                                        otomatik çalışması için systemd
+                                        kullanılmıştır. Systemd Linux sistemlerde init servisidir. Kernel tarafından
+                                        otomatik olarak başlatılır. Kullanıcıya,
+                                        systemctl çatısı altında yazılımlarını otomatik olarak başlatılabileceği bir
+                                        ortam sunar.
+                                        <br />
+                                        <br />
+                                        Ana langırt yazılımı, network kartından (driverdan) önce çalışabilir. Bu durumun
+                                        gerçekleşmesi halinde, langırt yazılımı
+                                        tüm network operasyonlarında hata verebilir. Bu durumun önüne geçmek için After
+                                        komutu ile network başlaması sonrasında
+                                        langırt yazılımının çalışması sistem tarafından talep edilmiştir.
+                                    </p>
+
+                                </li>
+                                <li>
+                                    <h4>1.7 ALT MODÜLLER ve KİŞİ GÖREV DAĞILIM TABLOSU</h4>
+                                    <p class="ml-4 mt-3 h6">
+                                        Gömülü yazılımın geliştirilmesi, aşağıdaki alt iş parçacıklarına bölünmüştür ;
+                                        <br />
+                                    <p class="ml-5 h6">
+                                        1) Sistem üzerindeki donanımların alt seviye kontrolü, donanımların fonksiyonel
+                                        testlerinin yapılması.
+                                        <br />
+                                        <span class="ml-5 h6">
+                                            a) Step motor sürücülerinin geliştirilmesi, kullanıcı seviyesine wrapper
+                                            metodlar geliştirilmesi.
+                                            <br />
+                                        </span>
+                                        <span class="ml-5 h6">
+                                            b) Sensörlerden veri alınması ve kullanıcı seviyesine wrapper metodlar
+                                            geliştirilmesi.
+                                        </span>
+                                        <br />
+                                        <br />
+                                        2) Ana kontrol (oyun) algoritmasının geliştirilmesi. Bu alt modülde, robotun
+                                        insana
+                                        karşı langırt oynamasındaki ana
+                                        algoritma geliştirilmiştir. Bu algoritmanın geliştirilmesinde tüm gömülü ekibi
+                                        birlikte çalışmıştır.
+                                        <br />
+                                        <br />
+                                        3) Görüntü işleme ve bilgisayarla görü uygulamasının gerçekleştirilmesi.
+                                        <br />
+                                        <span class="ml-5 h6">
+                                            a) Görüntü üzerinde top tespiti.
+                                            <br />
+                                        </span>
+                                        <span class="ml-5 h6">
+                                            b) Görüntü üzerinde insan kollarının tespiti.
+                                        </span>
+                                        <br />
+                                        <br />
+                                        4) Arayüz (Desktop) ile tüm iletişim işlemlerinin (TCP ve multicast UDP)
+                                        gerçekleştirilmesi.
+                                        <br />
+                                        <span class="ml-5 h6">
+                                            a) TCP sunucunun gerçekleştirilmesi ve arayüz komutları ile sistemin
+                                            kontrolü.
+                                            <br />
+                                            b) Haberleşme yapısının geliştirilmesi, UDP Multicast işlemlerinin yapılması
+                                            ve
+                                            Desktop tarafında test edilmesi.
+
+                                        </span>
+                                    </p>
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner-content">
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear());</script> Created | by GRUP 8
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+
+    <script language="text/Javascript">
+        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+        function clearField(t) {                   //declaring the array outside of the
+            if (!cleared[t.id]) {                      // function makes it static and global
+                cleared[t.id] = 1;  // you could use true and false, but that's more typing
+                t.value = '';         // with more chance of typos
+                t.style.color = '#fff';
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
