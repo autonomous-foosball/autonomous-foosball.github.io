@@ -247,6 +247,33 @@
                                         <img class="" src="assets/images/gomulu2.jpg" style="width:40%;height:40%;" />
                                     </div>
                                     <br />
+                                    <br />
+                                    Haberleşmede kullanılan paket yapısı aşağıdaki gibidir ;
+                                    <br />
+                                    <br />
+                                    struct {
+                                    <br />
+                                    uint16_t ball position_x;
+                                    <br />
+                                    uint16_t ball position_y;
+                                    <br />
+                                    uint16_t arm_robot_snt_position;
+                                    <br />
+                                    uint16_t arm_robot_gk_position;
+                                    <br />
+                                    uint16_t arm_human_snt_position;
+                                    <br />
+                                    uint16_t arm_human_gk_position;
+                                    <br />
+                                    uint16_t human_score;
+                                    <br />
+                                    uint16_t robot_score;
+                                    <br />
+                                    }
+                                    <br />
+                                    UDP Paket boyutu : 16 Byte
+                                    <br />
+                                    <br />
                                     ● Raspberry Pi Cihazın IP si 10.0.0.10 olarak, Desktopda sistemin görüntüleneceği
                                     cihazın IP si 10.0.0.93 olarak statik
                                     olarak ayarlanacaktır.
@@ -281,6 +308,20 @@
                                         parçacıkları sonlandıktan sonra, durumlarını
                                         belirten global değişkenlere STOPPED ataması yapar.
                                         <br />
+                                        <br />
+                                        typedef enum{
+                                        <br />
+                                        STATE_PLAYING = 0,
+                                        <br />
+                                        STATE_STOPPED,
+                                        <br />
+                                        STATE_STOP_REQUESTED,
+                                        <br />
+                                        STATE_NUM
+                                        <br />
+                                        }PLAY_STATE;
+                                        <br />
+                                        <br />
                                         3) Eskiye yönelik maç bilgilerinin gönderilmesi : Arayüzden gelen eskiye yönelik
                                         maçların istenmesi halinde, sunucu iş
                                         parçacığı güncel son 10 maçın tutulduğu eskiye yönelik maç bilgilerinin
@@ -297,6 +338,28 @@
                                         otomatik olarak başlatılır. Kullanıcıya,
                                         systemctl çatısı altında yazılımlarını otomatik olarak başlatılabileceği bir
                                         ortam sunar.
+                                        <br />
+                                        <br />
+                                        Kullanılan Servis Dosyası aşağıda belirtilmiştir.
+                                        <br />
+                                        <br />
+                                        [Unit]
+                                        <br />
+                                        Description : Smart Foosball Service
+                                        <br />
+                                        Wants=network-online.target
+                                        <br />
+                                        After=network.target network network-online.target
+                                        <br />
+                                        <br />
+                                        [Service]
+                                        <br />
+                                        ExecStart=/home/cse396/Desktop/fball_main_software
+                                        <br />
+                                        <br />
+                                        [Install]
+                                        <br />
+                                        WantedBy=multi-user.target
                                         <br />
                                         <br />
                                         Ana langırt yazılımı, network kartından (driverdan) önce çalışabilir. Bu durumun
@@ -352,17 +415,20 @@
                                             a) TCP sunucunun gerçekleştirilmesi ve arayüz komutları ile sistemin
                                             kontrolü.
                                             <br />
-                                            b) Haberleşme yapısının geliştirilmesi, UDP Multicast işlemlerinin yapılması
-                                            ve
-                                            Desktop tarafında test edilmesi.
-
+                                            <span class="ml-5 h6">
+                                                b) Haberleşme yapısının geliştirilmesi, UDP Multicast işlemlerinin
+                                                yapılması ve Desktop tarafında test edilmesi.
+                                            </span>
                                         </span>
                                     </p>
                                     </p>
                                 </li>
                             </ul>
-                        </li>
 
+                        </li>
+                        <div style="display: flex;justify-content: center;">
+                            <img class="" src="assets/images/gomulu3.jpg" style="width:60%;height:60%;" />
+                        </div>
                     </ul>
 
                 </div>
